@@ -1,5 +1,7 @@
 # Itamae::Plugin::Recipe::Grafana
 
+[![Build Status](https://travis-ci.com/ohr486/itamae-plugin-recipe-grafana.svg?branch=master)](https://travis-ci.com/ohr486/itamae-plugin-recipe-grafana)
+
 itamae plugin to install grafana
 
 ## Installation
