@@ -3,4 +3,4 @@ when "debian", "ubuntu"
   execute "apt-get update"
 end
 
-include_recipe "grafana"
+include_recipe "grafana::default"
