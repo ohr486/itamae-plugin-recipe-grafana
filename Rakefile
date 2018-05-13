@@ -1,11 +1,10 @@
 require "bundler/gem_tasks"
 require "rspec/core/rake_task"
 
-RSpec::Core::RakeTask.new(:spec)
+task :spec => "spec:all"
+task :itamae => "itamae:all"
 
 IMAGES = %w(centos:7)
-
-task :default => :spec
 
 namespace :spec do
   task :all => IMAGES
@@ -13,7 +12,7 @@ namespace :spec do
   IMAGES.each do |image|
     desc "Running tests to #{image}"
     task image do
-      tag = "itamae-plugin-#{image.gsub(":","-")}:latest"
+      tag = "itamae-plugin-#{image.gsub(":", "-")}:latest"
       sh "DOCKER_IMAGE=#{tag} bundle exec rspec"
     end
   end

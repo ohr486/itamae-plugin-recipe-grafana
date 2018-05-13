@@ -1,6 +1,3 @@
-
-puts "####### install ---"
-
 grafana_version = node[:grafana][:version]
 
 # --- INSTALL ---
