@@ -6,7 +6,6 @@ rvm:
   - 2.4
 env:
   - IMAGE=centos:7
-  - IMAGE=debian:jessie
 bundler_args: "--jobs=4"
 cache: bundler
 before_install:
