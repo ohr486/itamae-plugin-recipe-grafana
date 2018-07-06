@@ -13,3 +13,6 @@
 # for editor
 *~
 *.swp
+
+# for ide
+.vscode
